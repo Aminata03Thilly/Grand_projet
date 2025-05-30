@@ -1,0 +1,384 @@
+ /* Couleur principale */
+:root {
+  --bleu-principal: #004080;
+  --bleu-clair: #cce6ff;
+  --gris-clair: #f8f9fa;
+}
+/* Style général */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar .nav-link {
+  color: white !important;
+}
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Section d'accueil */
+section.bg-light {
+  background-color: #f4f4f4;
+}
+section.bg-light h2 {
+  font-size: 2.5rem;
+}
+section.bg-light img {
+  max-width: 100%;
+}
+
+
+/* Avis clients */
+.card-img-top.rounded-circle {
+  border: 3px solid #004080;
+}
+.card-body .text-warning {
+  font-size: 1.2rem;
+}
+
+/* Partenaires */
+section .d-flex img {
+  transition: filter 0.3s ease;
+}
+section .d-flex img:hover {
+  filter: grayscale(0%);
+}
+.py-5:hover{
+color:  #004080;
+}
+/* Footer */
+footer {
+  background-color: #004080;
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer h5 {
+  font-weight: bold;
+}
+
+/* Badge Panier */
+#cart-count {
+  font-size: 0.7rem;
+  padding: 4px 6px;
+}
+
+
+/* Titres */
+h2 {
+  font-weight: 700;
+}
+
+/* Style général pour le formulaire */
+form {
+  background-color: #f9f9f9; /* Fond légèrement gris clair */
+  padding: 40px;
+  border-radius: 15px; /* Coins arrondis pour un aspect plus doux */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ombre subtile pour un effet de profondeur */
+  max-width: 500px;
+  margin: 0 auto; /* Centrer le formulaire */
+}
+
+form h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+form .form-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333; /* Couleur plus douce pour les étiquettes */
+}
+
+form .form-control {
+  border-radius: 10px; /* Coins arrondis pour les champs de saisie */
+  border: 1px solid #ddd; /* Bordure douce */
+  padding: 12px;
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.3s ease; /* Transition fluide */
+}
+
+form .form-control:focus {
+  border-color: #004080; /* Couleur de la bordure lors du focus */
+  box-shadow: 0 0 8px rgba(0, 64, 128, 0.3); /* Ombre légère pour un effet de mise en valeur */
+  outline: none; /* Retirer le contour par défaut du navigateur */
+}
+
+form .form-control::placeholder {
+  color: #888; /* Couleur plus claire pour les placeholders */
+}
+
+/* Boutons */
+.btn-primary {
+  background-color: #004080; /* Bleu principal */
+  border-color: #004080;
+  color: white;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 25px; /* Boutons arrondis */
+  font-size: 1.1rem;
+  transition: all 0.3s ease; /* Transition fluide */
+  width: 100%; /* Occupe toute la largeur du formulaire */
+}
+
+.btn-primary:hover {
+  background-color: #003366; /* Couleur plus foncée au survol */
+  border-color: #003366;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 10px rgba(0, 64, 128, 0.3); /* Ombre lors du focus sur le bouton */
+}
+
+/* Message d'erreur */
+#message {
+  font-size: 0.9rem;
+  color: red;
+  margin-top: 10px;
+  text-align: center; /* Centrer le message d'erreur */
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  form {
+    padding: 20px; /* Réduire le padding sur les petits écrans */
+  }
+
+  form h2 {
+    font-size: 1.5rem; /* Adapter la taille du titre */
+  }
+
+  .btn-primary {
+    padding: 10px 20px; /* Adapter la taille du bouton */
+  }
+}
+
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #fff !important;
+}
+
+/* Section produits */
+h2 {
+  font-weight: bold;
+  color: var(--bleu-principal);
+}
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.btn-success {
+  border-radius: 25px;
+  padding: 8px 20px;
+}
+.card-img-top{
+  height: px;
+  object-fit: contain;
+}
+
+/* Footer */
+footer {
+  padding-top: 20px;
+}
+
+footer h5 {
+  font-weight: bold;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 160px;
+  }
+}
+
+/* Style des cartes de catégorie */
+.categorie-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.categorie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image des catégories */
+.categorie-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #004080;
+}
+
+/* Titre de catégorie */
+.categorie-title {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #004080;
+  background-color: #f8f9fa;
+}
+
+/* Section À propos */
+section.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #004080;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Texte de la section À propos */
+p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Vidéo */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background-color: #002855;
+  padding: 2rem 0;
+  color: #fff;
+}
+
+footer h5 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+/* Cartes des catégories */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Boutons */
+.btn-primary {
+  background-color: #004080;
+  border-color: #004080;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #002855;
+  border-color: #002855;
+}

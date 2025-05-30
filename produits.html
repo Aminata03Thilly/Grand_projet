@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produits - ARDO-EDY ELECTRONIC</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #004080;">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="index.html">ARDO-EDY ELECTRONIC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link active" href="produits.html">Produits</a></li>
+          <li class="nav-item"><a class="nav-link" href="categories.html">Catégories</a></li>
+          <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="login.html">Connexion</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Créer un compte</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section Produits -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 text-primary">Nos Produits</h2>
+      <div class="row">
+        <!-- Carte de produit 1 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="images/ORDINATEUR.jpg" class="" alt="" width="100" height="100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Produit 1</h5>
+              <p class="card-text">Description courte du produit. Très bon rapport qualité/prix.</p>
+              <p class="text-danger fw-bold">4999 CFA</p>
+              <button class="btn btn-success" onclick="ajouterAuPanier('Produit 1', 4999, 'images/produit1.jpg')">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carte de produit 2 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="images/souris.jpg" class="" alt="Produit 2" width="100" height="100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Produit 2</h5>
+              <p class="card-text">Description courte du produit. Parfait pour les professionnels.</p>
+              <p class="text-danger fw-bold">7999 CFA</p>
+              <button class="btn btn-success" onclick="ajouterAuPanier('Produit 2', 7999, 'images/produit2.jpg')">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carte de produit 3 -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="images/phones.jpg" class="" alt="" width="100" height="100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Produit 3</h5>
+              <p class="card-text">Description du produit 3. Idéal pour les amateurs de nouvelles technologies.</p>
+              <p class="text-danger fw-bold">9999 CFA</p>
+              <button class="btn btn-success" onclick="ajouterAuPanier('Produit 3', 9999, 'images/produit3.jpg')">Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer -->
+<footer class="text-white mt-5" style="background-color: #004080;">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Réseaux Sociaux</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white">Facebook</a></li>
+          <li><a href="#" class="text-white">Instagram</a></li>
+          <li><a href="#" class="text-white">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Liens Utiles</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white">Accueil</a></li>
+          <li><a href="produits.html" class="text-white">Produits</a></li>
+          <li><a href="categories.html" class="text-white">Catégories</a></li>
+          <li><a href="contact.html" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Nos Services</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white">Livraison rapide</a></li>
+          <li><a href="#" class="text-white">Support 24/7</a></li>
+          <li><a href="#" class="text-white">Paiement sécurisé</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="bg-light" />
+    <p class="text-center mb-0">&copy; 2025 ARDO-EDY ELECTRONIC. Tous droits réservés.</p>
+  </div>
+</footer>
+
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+<script src="produits.html">
+  
+</script>
+</body>
+</html>
